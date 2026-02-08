@@ -1,4 +1,0 @@
-income,5000,45.0
-income,Buy a Laptop,50000.0
-income,Add 50000,50000.0
-expense,Buy a Laptop,45000.0
