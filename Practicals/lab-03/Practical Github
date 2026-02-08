@@ -1,0 +1,142 @@
+Create a Git Repository and Push to GitHub
+Step 1: Install & Verify Git
+
+Check whether Git is installed:
+
+git --version
+
+
+If Git is not installed:
+
+Windows: https://git-scm.com/download/win
+
+Mac:
+
+brew install git
+
+
+Linux:
+
+sudo apt install git
+
+Step 2: Configure Git (One-Time Setup)
+
+Set your username and email:
+
+git config --global user.name "Your Name"
+git config --global user.email "your-email@gmail.com"
+
+
+Verify configuration:
+
+git config --list
+
+Step 3: Create Project Folder
+mkdir learning-journey
+cd learning-journey
+
+Step 4: Initialize Git Repository
+git init
+
+
+Output:
+
+Initialized empty Git repository
+
+Step 5: Create README.md File
+
+Create file:
+
+touch README.md
+
+
+Open file (any one):
+
+nano README.md
+
+
+OR
+
+code README.md
+
+
+Add content:
+
+# My Learning Journey 🚀
+
+This repository documents my journey as a software developer.
+
+## What I’m Learning
+- Python & Django
+- REST APIs
+- Docker & Kubernetes
+- Git & GitHub
+- System Design
+
+## Goals
+- Improve backend engineering skills
+- Build real-world projects
+- Crack software engineering interviews
+
+## Progress
+I will continuously update this repository with my learnings and projects.
+
+
+Save the file.
+
+Step 6: Check Git Status
+git status
+
+
+Output:
+
+Untracked files:
+  README.md
+
+Step 7: Add File to Git
+git add README.md
+
+
+OR add all files:
+
+git add .
+
+Step 8: Commit Changes
+git commit -m "Add README describing my learning journey"
+
+Step 9: Create Repository on GitHub
+
+Go to 👉 https://github.com
+
+Click New Repository
+
+Repository name: learning-journey
+
+Choose Public or Private
+
+❌ Do NOT add README
+
+Click Create Repository
+
+Step 10: Connect Local Repo to GitHub
+git branch -M main
+git remote add origin https://github.com/USERNAME/learning-journey.git
+
+
+Verify remote:
+
+git remote -v
+
+Step 11: Push Code to GitHub
+git push -u origin main
+
+
+Login if prompted.
+
+Step 12: Verify on GitHub
+
+Refresh GitHub repository
+
+README.md is visible
+
+Commit message appears
